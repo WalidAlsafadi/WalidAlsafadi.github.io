@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .resume-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-section {
+    flex: 4;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .right-section {
+    color: #333;
+    flex: 6;
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }  
+  
+  h1, h2 {
+    color: #fff;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .right-section h2{
+    color: #333;
+  }
+  
+  .right-section p{
+    color: #444;
+  }
+
+  .section p {
+    margin: 0;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .skills ul, .languages ul, .certificates ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills li, .languages li, .certificates li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 23px;
+  height: 23px;
+}
