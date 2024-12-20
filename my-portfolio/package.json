@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://WalidAlsafadi.github.io/WalidAlsafadi.github.io",
+  "homepage": "https://WalidAlsafadi.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
