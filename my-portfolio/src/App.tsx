@@ -30,7 +30,7 @@ interface ProfileInfo {
     institution: string;
     degree: string;
     period: string;
-    details: string;
+    details: string[];
   }>;
   experiences: Array<{
     title: string;
@@ -69,21 +69,23 @@ const Portfolio: React.FC = () => {
     education: [
       {
         institution: "University College of Applied Sciences",
-        degree: "BS, Data Science and Artificial Intelligence",
+        degree: "Bachelor of Science - BS, Data Science and Artificial Intelligence",
         period: "Aug 2022 - Present",
-        details: "Specializing in Artificial Intelligence and Data Science with a comprehensive curriculum covering advanced machine learning and data science principles."
+        details: ["I continued my journey in Artificial Intelligence and Data Science at UCAS after transferring from AURAK. I served as the Project Manager for the Engineering Club during Fall 2023, though activities were paused due to the war in Gaza. My efforts were recognized with a 30% scholarship for Fall 2023, awarded for outstanding academic performance, including a Spring 2022 grade of 93.26%. Unfortunately, due to interruptions caused by the war in Gaza, my graduation has been delayed to 2026."]
       },
       {
         institution: "American University of Ras Al Khaimah",
-        degree: "BS, Artificial Intelligence",
+        degree: "Bachelor of Science - BS, Artificial Intelligence",
         period: "Aug 2021 - Jun 2022",
-        details: "Learning basic Computer Engineering requirements such as Calculus, Physics, C++."
+        details: ["During my time at AURAK, I excelled both academically and in extracurricular activities. I won first place in the UAE Inter-University FIFA Tournament and was listed on the Dean’s List for Fall 2021, ranking among the top 7 AI students. I successfully completed two semesters (Fall 2021 and Spring 2022) with a GPA of 3.5 across 33 credit hours before transferring to UCAS. My performance also earned me a 20% scholarship for the entire BS program, based on my high school achievement of 91.67%."]
       },
       {
-        institution: "Al Jawda School for Boys",
-        degree: "High School Degree",
-        period: "2018 Oct - Jun 2021",
-        details: ""
+        institution: "Al-Jawdah Boys’ School for Secondary Education",
+        degree: "Advanced Stream, High School Degree",
+        period: "Sep 2018 - Jun 2021",
+        details: [
+          "I graduated with high distinction, scoring 91.67% in the Advanced Stream—the most challenging academic track in public schools. Despite the challenges posed by the COVID-19 pandemic, I successfully completed Grade 12, developing strong self-learning skills along the way."
+        ]
       }
     ],
 
@@ -117,8 +119,57 @@ const Portfolio: React.FC = () => {
       {
         name: "BBC News",
         description: "Self updating dataset. It collects RSS Feeds from BBC News using a Kernel: https://www.kaggle.com/gpreda/bbc-news-rss-feeds. Use the data to analyze the sentiment of news, from title and description.",
-        technologies: ["Llama3-70b-8192", "LLM", "Web Scraping", "NLP"],
-        githubLink: "https://github.com/WalidAlsafadi/TwitterSentiment-Llama3",
+        technologies: ["Sentiment Analysis", "EDA", "Text Processing"],
+        githubLink: "https://github.com/WalidAlsafadi/BBC_News",
+        demoLink: ""
+      },
+      {
+        name: "Red Wine Quality",
+        description: "Practice dataset for regression or classification modelling.",
+        technologies: ["Machine Learning", "Random Forest", "EDA"],
+        githubLink: "https://github.com/WalidAlsafadi/Red-Wine-Quality",
+        demoLink: ""
+      },
+      {
+        name: "Indian Diabetes Analysis",
+        description: "Predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset.",
+        technologies: ["Model Selection", "Data Processing", "EDA"],
+        githubLink: "https://github.com/WalidAlsafadi/Indian-Diabetes",
+        demoLink: ""
+      },
+      {
+        name: "UFO Sighting",
+        description: "Perform data analysis on over 80,000 reports of unidentified flying object reports in the last century.",
+        technologies: ["Data Visualization", "Plotly", "Data Precessing"],
+        githubLink: "https://github.com/WalidAlsafadi/UFO-Sighting",
+        demoLink: ""
+      },
+      {
+        name: "House Prices",
+        description: "Predict the finale sale price for each house using 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa. ",
+        technologies: ["Machine Learning", "Data Processing", "EDA"],
+        githubLink: "https://github.com/WalidAlsafadi/House-Prices",
+        demoLink: ""
+      },
+      {
+        name: "Divorce Predictors Dataset",
+        description: "A total of 170 couples are included in this dataset, along with the Divorce Predictor Scale variables (DPS), a questionnaire of 54 questions, A five-point scale was used to measure all responses.",
+        technologies: ["Machine Learning", "EDA", "Data Visualization", "Cross-Validation"],
+        githubLink: "https://github.com/WalidAlsafadi/Divorce-Predictors-Dataset",
+        demoLink: ""
+      },
+      {
+        name: "Human Resources SQL DataBase ",
+        description: "Use DML and DDL scripts to build a simple HR SQL project.",
+        technologies: ["Oracle SQL", "Database"],
+        githubLink: "https://github.com/WalidAlsafadi/HR-sqlDB",
+        demoLink: ""
+      },
+      {
+        name: "Library Website",
+        description: "Website that can display dynamic books while also allowing administrators to modify, delete, or add books in the SQL database.",
+        technologies: ["ASP.NET", "Web Development", "Database", "Visual Studio"],
+        githubLink: "https://github.com/WalidAlsafadi/Library-Website",
         demoLink: ""
       }
     ],
@@ -141,6 +192,12 @@ const Portfolio: React.FC = () => {
         issuer: "Simplilearn",
         date: "Apr 2023",
         link: "https://simpli-web.app.link/e/Wzy0WEzClzb"
+      },
+      {
+        name: "Programming for Everybody (Getting Started with Python)",
+        issuer: "University of Michigan",
+        date: "Mar 2023",
+        link: "https://coursera.org/verify/UBW9B3K4WKWL"
       }
     ],
 
@@ -150,7 +207,13 @@ const Portfolio: React.FC = () => {
       { name: "Machine Learning", icon: <Code className="text-orange-600" /> },
       { name: "Microsoft Azure", icon: <Code className="text-blue-600" /> },
       { name: "TensorFlow", icon: <Code className="text-green-500" /> },
-      { name: "PyTorch", icon: <Code className="text-red-500" /> }
+      { name: "PyTorch", icon: <Code className="text-red-500" /> },
+      { name: "Scikit-learn", icon: <Code className="text-red-500" /> },
+      { name: "NumPy", icon: <Code className="text-red-500" /> },
+      { name: "Pandas", icon: <Code className="text-red-500" /> },
+      { name: "Matplotlib", icon: <Code className="text-red-500" /> },
+      { name: "NLTK", icon: <Code className="text-red-500" /> },
+      { name: "Jupyter Notebooks", icon: <Code className="text-red-500" /> }
     ],
 
     interests: [
