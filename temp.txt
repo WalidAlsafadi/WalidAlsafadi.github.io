@@ -1,6 +1,0 @@
-Portfolio website:
-
-* Make it as 1 long page
-* fix the icons
-* download CV button
-* align center
