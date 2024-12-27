@@ -479,7 +479,7 @@ const Portfolio: React.FC = () => {
             <div className="md:col-span-1">
               <div className="w-40 h-40 md:w-56 md:h-56 mx-auto bg-gradient-to-br from-blue-200 to-blue-400 rounded-full shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <img 
-                  src=".\src\assets\images\PersonalPhoto.jpg"  // Replace with your image path
+                  src="./src/assets/images/PersonalPhoto.jpg"  // Replace with your image path
                   alt="Profile" 
                   className="w-full h-full object-cover" 
                 />
